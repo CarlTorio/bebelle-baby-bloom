@@ -237,13 +237,28 @@ const HeroSection = () => {
 
           <button
             onClick={() => navigate('/shop')}
-            className={`transition-all duration-700 ${showContent ? 'opacity-100' : 'opacity-0'} inline-flex items-center justify-center rounded-full font-bold text-white shadow-lg hover:scale-105 active:scale-95 ${heroIsMobile ? 'text-base px-7 py-3 mb-4' : 'text-lg px-9 py-4 mb-6'}`}
-            style={{ backgroundColor: v.cta, boxShadow: `0 8px 24px ${v.accent}55` }}
-            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = v.ctaHover)}
-            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = v.cta)}
+            className={`relative overflow-hidden transition-all duration-700 ${showContent ? 'opacity-100' : 'opacity-0'} inline-flex items-center justify-center rounded-full font-extrabold text-white shadow-xl hover:scale-[1.03] active:scale-95 group ${heroIsMobile ? 'text-base px-10 py-4 mb-5 w-[280px]' : 'text-xl px-14 py-5 mb-6 min-w-[320px]'}`}
+            style={{
+              background: `linear-gradient(135deg, ${v.cta} 0%, ${v.accent} 50%, ${v.ctaHover} 100%)`,
+              boxShadow: `0 12px 32px ${v.accent}66, inset 0 1px 0 rgba(255,255,255,0.4)`,
+              letterSpacing: '0.5px',
+            }}
           >
-            Order Now
+            <span className="relative z-10 flex items-center gap-2">
+              Order Now
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </span>
+            <span
+              aria-hidden
+              className="pointer-events-none absolute top-0 left-0 h-full w-1/3 animate-btn-shine"
+              style={{
+                background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.55) 50%, transparent 100%)',
+                filter: 'blur(2px)',
+              }}
+            />
           </button>
+
+
 
 
 
