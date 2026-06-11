@@ -229,11 +229,23 @@ const HeroSection = () => {
             Hands-Free Feeding Bottle
           </h1>
 
-          <p className={`${heroIsMobile ? 'text-sm mb-4' : 'text-lg mb-8'} text-muted-foreground leading-relaxed max-w-[500px] transition-opacity duration-700 ${showContent ? 'opacity-100' : 'opacity-0'}`}>
+          <p className={`${heroIsMobile ? 'text-sm mb-4' : 'text-lg mb-6'} text-muted-foreground leading-relaxed max-w-[500px] transition-opacity duration-700 ${showContent ? 'opacity-100' : 'opacity-0'}`}>
             {heroIsMobile
               ? "Hands-free feeding your baby drinks while you relax."
               : "The 3-in-1 bottle that lets your baby feed independently so you can finally have your hands (and your sanity) back."}
           </p>
+
+          <button
+            onClick={() => navigate('/shop')}
+            className={`transition-all duration-700 ${showContent ? 'opacity-100' : 'opacity-0'} inline-flex items-center justify-center rounded-full font-bold text-white shadow-lg hover:scale-105 active:scale-95 ${heroIsMobile ? 'text-base px-7 py-3 mb-4' : 'text-lg px-9 py-4 mb-6'}`}
+            style={{ backgroundColor: v.cta, boxShadow: `0 8px 24px ${v.accent}55` }}
+            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = v.ctaHover)}
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = v.cta)}
+          >
+            Order Now
+          </button>
+
+
 
 
 
