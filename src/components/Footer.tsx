@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
+import { Mail, Phone } from "lucide-react";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -14,9 +15,24 @@ const Footer = () => {
         </div>
 
         {/* Address */}
-        <div className="mb-6">
+        <div className="mb-5">
           <p className="text-[12px] uppercase tracking-wider text-white/50 font-semibold mb-1">Our Location</p>
           <p className="text-[14px] text-white/80">30 N Gould St Ste R, Sheridan, WY 82801</p>
+        </div>
+
+        {/* Company Info */}
+        <div className="mb-6">
+          <p className="text-[14px] font-semibold text-white/90 mb-3">Stallion Growth and Commerce LLC</p>
+          <div className="flex flex-col items-center gap-2">
+            <a href="mailto:cabueva.jpvmercado@gmail.com" className="flex items-center gap-2 text-[14px] text-white/70 hover:text-[#5BA4D9] transition-colors">
+              <Mail className="w-4 h-4" />
+              cabueva.jpvmercado@gmail.com
+            </a>
+            <a href="tel:13074001963" className="flex items-center gap-2 text-[14px] text-white/70 hover:text-[#5BA4D9] transition-colors">
+              <Phone className="w-4 h-4" />
+              (307) 400-1963
+            </a>
+          </div>
         </div>
 
         {/* Description */}
