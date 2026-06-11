@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
+import { Mail, Phone } from "lucide-react";
 
 const Footer = () => {
   const navigate = useNavigate();
