@@ -102,13 +102,6 @@ const Footer = () => {
                 <Mail className="w-4 h-4 text-white/50 shrink-0" />
                 cabueva.jpvmercado@gmail.com
               </a>
-              <a
-                href="tel:13074001963"
-                className="flex items-center gap-2 text-[14px] text-white/70 hover:text-white transition-colors hover:underline underline-offset-4"
-              >
-                <Phone className="w-4 h-4 text-white/50 shrink-0" />
-                (307) 400-1963
-              </a>
               <div className="flex items-start gap-2 text-[14px] text-white/70">
                 <MapPin className="w-4 h-4 text-white/50 shrink-0 mt-0.5" />
                 <span>Sheridan, WY 82801, USA</span>
