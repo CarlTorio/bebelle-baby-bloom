@@ -130,10 +130,7 @@ const Footer = () => {
         <div className="my-10 border-t border-white/10" />
 
         {/* Bottom Row */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-2 text-center md:text-left">
-          <p className="text-[13px] text-white/50">
-            © 2025 Bebelle Philippines. All rights reserved.
-          </p>
+        <div className="flex items-center justify-center text-center">
           <p className="text-[13px] text-white/50">
             Powered by Stallion Growth and Commerce LLC
           </p>
