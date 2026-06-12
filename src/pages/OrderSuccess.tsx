@@ -98,7 +98,7 @@ const OrderSuccess = () => {
               <p className="text-[14px] font-bold text-[#1F2937]">Bebelle Bottle</p>
               <p className="text-[12px] text-[#6B7280]">{order.subtitle}</p>
             </div>
-            <p className="text-[18px] font-extrabold text-[#5BA4D9]">₱{order.price?.toLocaleString()}</p>
+            <p className="text-[18px] font-extrabold text-[#5BA4D9]">${order.price?.toLocaleString()}</p>
           </div>
           <div className="pt-3 flex flex-col gap-1.5">
             <div className="flex justify-between text-[13px]">
@@ -111,7 +111,7 @@ const OrderSuccess = () => {
             </div>
             <div className="border-t border-[#E5E7EB] pt-3 mt-1 flex justify-between">
               <span className="text-[15px] font-bold text-[#1F2937]">Total</span>
-              <span className="text-[22px] font-extrabold text-[#5BA4D9]">₱{order.price?.toLocaleString()}</span>
+              <span className="text-[22px] font-extrabold text-[#5BA4D9]">${order.price?.toLocaleString()}</span>
             </div>
           </div>
         </div>
