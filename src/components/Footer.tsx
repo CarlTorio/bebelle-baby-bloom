@@ -107,13 +107,13 @@ const Footer = () => {
                 <span>Sheridan, WY 82801, USA</span>
               </div>
               <a
-                href="https://bebelle.store"
+                href="https://bebelle-baby.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-[14px] text-white/70 hover:text-white transition-colors hover:underline underline-offset-4"
               >
                 <Store className="w-4 h-4 text-white/50 shrink-0" />
-                bebelle.store
+                bebelle-baby.com
               </a>
             </div>
           </div>
